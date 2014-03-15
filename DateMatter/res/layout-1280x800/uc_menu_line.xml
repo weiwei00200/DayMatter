@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_title"
+        android:textColor="@color/line_title"
+        android:textSize="26.0px"
+        android:background="@color/line_title_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"/>
+    
+    <LinearLayout
+        android:id="@+id/layout_category_container_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/line_item_normal"
+        android:orientation="vertical" />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tool"
+        android:textColor="@color/line_title"
+        android:textSize="26.0px"
+        android:background="@color/line_title_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"/>
+    <LinearLayout 
+        android:id="@+id/layout_tool_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       	android:background="@color/line_item_normal"/>
+	<TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/more"
+        android:textColor="@color/line_title"
+        android:textSize="26.0px"
+        android:background="@color/line_title_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"/>
+    <LinearLayout 
+        android:id="@+id/layout_more_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       	android:background="@color/line_item_normal"/>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/menu_bottom_shape"/>
+</LinearLayout>

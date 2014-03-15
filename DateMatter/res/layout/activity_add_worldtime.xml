@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_daysmatter_list" >
+
+    <LinearLayout
+        android:id="@+id/addworldtime_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/addworldtime_et_searchbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/addworldtime_searchbar"
+            android:drawableLeft="@drawable/search_icon"
+            android:hint="@string/addworldtime_searchbar_hint"
+            android:paddingBottom="6.0dip"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="2.0dip"
+            android:paddingTop="6.0dip"
+            android:textColorHint="@color/addworldtime_searchbar_hint" />
+
+        <ListView
+            android:id="@+id/addworldtime_listiview_citylist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/addworldtime_list"
+            android:cacheColorHint="@android:color/transparent" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/addworldtime_pb_loading"
+        style="@style/ListSpinner"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

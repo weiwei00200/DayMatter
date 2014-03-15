@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用 -->
+    <string name="app_name">倒数日</string>
+    <string name="menu_common_feature">通用</string>
+    <string name="matter_ok">"确定"</string>
+    <string name="matter_cancel">"取消"</string>
+    <string name="matter_delete">"删除"</string>
+    <string name="matter_loaddata_faild">加载数据失败</string>
+
+    <!-- Title -->
+    <string name="title_activity_home">倒数日</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="title_activity_holiday">节日</string>
+    <string name="title_activity_count_down">日期计算</string>
+    <string name="title_activity_history_today">历史上的今天</string>
+    <string name="title_activity_worldtime">世界时间</string>
+    <string name="title_activity_about">关于倒数日</string>
+    <string name="title_activity_category">分类设置</string>
+    <string name="title_activity_add_matter">"添加事件"</string>
+    <string name="title_activity_modify_matter">"修改事件"</string>
+    <string name="title_activity_holiday_festival">节气节假日</string>
+
+    <!-- 分类 -->
+    <string name="category_default">默认</string>
+
+    <string-array name="matter_category">
+        <item>"默认"</item>
+        <item>"生活事件"</item>
+        <item>"工作事件"</item>
+        <item>"纪念日"</item>
+    </string-array>
+
+    <!-- widget -->
+    <string name="widget_label">倒数日(1×1)</string>
+    <string name="widget_label_middle">倒数日(2×1)</string>
+    <string name="widget_label_wide">倒数日(3×1)</string>
+    <string name="widget_label_huge">倒数日(4×1)</string>
+    <string name="mattery_widget_configure_title">"请选择一个事件"</string>
+    <string name="mattery_widget_matter_be_delete_short">"已删除"</string>
+    <string name="mattery_widget_matter_be_delete">"该事件已经被删除，请删除该桌面小部件！"</string>
+
+    <!-- settings -->
+    <string name="setting_pref_common_title">内容</string>
+    <string name="setting_pref_backup_title">数据备份</string>
+    <string name="setting_pref_about_title">其他</string>
+
+    <!-- matter -->
+    <string name="matter_list_empty">您还没有设置倒数日提醒</string>
+    <string name="matter_unit">"天"</string>
+    <string name="matter_past_format">"%s已超过"</string>
+    <string name="matter_future_format">"距离%s还有"</string>
+    <string name="matter_top_date_format">"日期：%s"</string>
+    <string name="matter_future_format_distance">"还有"</string>
+    <string name="matter_list_menu_title">"选择操作"</string>
+    <string name="matter_list_menu_view">"查看"</string>
+    <string name="matter_list_menu_modify">"修改"</string>
+    <string name="matter_list_menu_delete">"删除"</string>
+    <string name="matter_today_format">"今天：%s"</string>
+    <string name="holiday_add_local">"是否将该节日加入到倒数日中？"</string>
+    <string name="history_today_share_format">#倒数日# [历史上的%1$s月%2$s日] %3$s</string>
+
+    <!-- 修改 -->
+    <string name="matter_title">"事件"</string>
+    <string name="date_title">"日期"</string>
+    <string name="category_title">"分类"</string>
+    <string name="repeat_title">"重复"</string>
+    <string name="remind_title">"提醒"</string>
+    <string name="top_title">"置顶"</string>
+    <string name="remark_title">"备注"</string>
+    <string name="remark_title_hint">"请输入备注"</string>
+    <string name="matter_title_hint">"标题内容"</string>
+    <string name="matter_save">"保存成功"</string>
+    <string name="matter_delete_confirm">"确定要删除该事件吗？"</string>
+    <string name="matter_delete_success">"删除成功"</string>
+
+    <!-- 分享 -->
+    <string name="about_app">"倒数日是一个帮助您记录生活中重要日子的小工具。\n\n欢迎反馈你的需求 ^_^"</string>
+    <string name="share_intent_subject">"推荐使用倒数日，记录生活中的重要日子"</string>
+    <string name="share_intent_text">"推荐你一款简单的小工具，它可以帮你记录中生活中的重要日子，让你不再错过！下载地址：http://t.cn/zW4QygW"</string>
+    <string name="share_intent_title">"请选择分享途径"</string>
+    <string name="screen_shot_progress">"正在截图中，请稍等"</string>
+    <string name="screen_shot_save_path">"截图保存在"</string>
+
+    <!-- 关于 -->
+    <string name="mark_preferences">"评分"</string>
+    <string name="settings_about_title">"关于"</string>
+    <string name="aboutus_summary_preferences">"版本号：%s"</string>
+    <string name="settings_feedback_title">"意见反馈"</string>
+    <string name="settings_feedback_summary">"请输入您的使用感受和建议!"</string>
+    <string name="settings_share_title">"分享"</string>
+    <string name="settings_share_summary">"分享给好友"</string>
+
+    <!-- 菜单 -->
+    <string name="menu_settings">设置</string>
+    <string name="menu_count_down">日期计算</string>
+    <string name="menu_holiday">节日</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_feedback">用户反馈</string>
+    <string name="menu_new_daysmatter">添加</string>
+    <string name="menu_modify">修改</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_share">分享</string>
+
+    <!-- 语言设置 -->
+    <string name="settings_locale">语言设置</string>
+    <string name="settings_locale_tips">请选择语言</string>
+
+    <!-- 排序设置 -->
+    <string name="settings_sort_tips">"请选择排序类型"</string>
+    <string name="settings_sort">"排序类型"</string>
+
+    <string-array name="settings_sort_type">
+        <item>"默认排序"</item>
+        <item>"事件时间顺序"</item>
+        <item>"剩余天数顺序"</item>
+    </string-array>
+
+    <!-- 状态栏 -->
+    <string name="setting_bar_notify_title">"状态栏提醒"</string>
+    <string name="setting_bar_notify_summary">"开启后，会显示最近事件"</string>
+
+    <!-- 事件类型 -->
+    <string name="mattery_category_title">"请选择事件类型"</string>
+    <string name="setting_category_title">"分类设置"</string>
+    <string name="setting_input_category_title">"请输入分类名称"</string>
+    <string name="setting_input_category_empty">"您输入无效，请重新输入"</string>
+
+    <string-array name="category_operate_type">
+        <item>修改</item>
+        <item>删除</item>
+    </string-array>
+
+    <!-- 重复类型 -->
+    <string name="mattery_repeat_title">"请选择重复类型"</string>
+
+    <string-array name="matter_repeat">
+        <item>"无"</item>
+        <item>"周"</item>
+        <item>"月"</item>
+        <item>"年"</item>
+    </string-array>
+
+    <!-- change log -->
+    <string name="title_changelog">更新历史</string>
+    <string name="changelog_close">确定</string>
+
+    <!-- notification -->
+    <string name="notification_content_text">您有新的提醒</string>
+    <string name="notification_matter_today">%s就在今天</string>
+    <string name="notification_matter_tomorrow">%s就在明天</string>
+
+    <!-- 提醒时间 -->
+    <string name="mattery_remind_title">"请选择提醒时间"</string>
+
+    <string-array name="matter_remind">
+        <item>"无"</item>
+        <item>"当天"</item>
+        <item>"提前一天"</item>
+    </string-array>
+
+    <!-- calendar -->
+    <string name="matter_calendar_lunar_date_format">"农历  %d年"</string>
+    <string name="matter_calendar_gregorian_date_format">yyyy-MM-dd EEEEE</string>
+    <string name="matter_calendar_gregorian_date_format_1">yyyy年MM月dd日</string>
+
+    <!-- AppRate -->
+    <string name="dialog_title">评价  %s</string>
+    <string name="rate_message">如果你喜欢这个应用, 请您帮忙去评价下。\n谢谢支持！</string>
+    <string name="rate">马上评价</string>
+    <string name="later">稍后提示</string>
+    <string name="no_thanks">不，谢谢</string>
+
+    <!-- lock -->
+    <string name="startup_lock">锁定</string>
+    <string name="set_lock">绘制解锁图案</string>
+    <string name="change_lock">修改解锁图案</string>
+    <string name="disable_startup_lock">取消锁定</string>
+
+    <!-- count down -->
+    <string name="count_down_tips_1">从</string>
+    <string name="count_down_tips_2">开始</string>
+    <string name="count_down_tips_3">距离</string>
+    <string name="count_down_tips_4">有</string>
+
+    <string-array name="tab_count_down_title_array">
+        <item>"日期计算"</item>
+        <item>"天数计算"</item>
+    </string-array>
+
+    <string name="count_before_days_tips">天前为</string>
+    <string name="count_after_days_tips">天后为</string>
+
+    <!-- about -->
+    <string name="about_preference_normal">常规</string>
+    <string name="about_preference_version">版本号</string>
+    <string name="about_preference_changelog">更新日志</string>
+    <string name="about_preference_support">支持</string>
+    <!-- attention -->
+    <string name="about_preference_follow">关注</string>
+    <string name="about_preference_follow_content">访问网站</string>
+
+    <!-- backup -->
+    <string name="settings_backup_title">"数据备份"</string>
+    <string name="settings_restore_title">"数据恢复"</string>
+    <string name="settings_backup_confirm">"你确定要备份数据吗？"</string>
+    <string name="settings_backup_success">"数据备份成功，保存在%s"</string>
+    <string name="settings_backup_failed">"数据备份失败，请稍候重试"</string>
+    <string name="settings_restore_location">"当前路径"</string>
+    <string name="settings_restore_picker_file">"请选择需要恢复的数据文件"</string>
+    <string name="settings_restore_success">"数据恢复成功"</string>
+    <string name="settings_restore_failed">"数据恢复失败，请稍候重试"</string>
+    <string name="backup_picker_way_title">请选择备份方式</string>
+
+    <string-array name="backup_way_list">
+        <item>备份到sdcard</item>
+        <item>备份到GoogleDrive</item>
+    </string-array>
+
+    <string name="settings_backup_no_google_play_services">"对不起，您没有安装GooglePlay服务，无法备份数据"</string>
+    <string name="settings_backup_to_drive_success">"成功备份到GoogleDrive中"</string>
+    <string name="settings_backup_progress">"数据备份中，请稍等"</string>
+    <string name="restore_picker_way_title">请选择恢复方式</string>
+
+    <string-array name="restore_way_list">
+        <item>从sdcard中恢复</item>
+        <item>从GoogleDrive中恢复</item>
+    </string-array>
+
+    <string name="settings_restore_no_google_play_services">"对不起，您没有安装GooglePlay服务，无法恢复数据"</string>
+    <string name="settings_restore_get_file_list_progress">"正在获取可恢复数据列表，请稍等"</string>
+    <string name="settings_restore_get_file_list_failed">"获取可恢复数据列表失败，请重试"</string>
+    <string name="settings_restore_file_empty">"没有可恢复的数据"</string>
+    <string name="settings_restore_progress">"数据恢复中，请稍等"</string>
+
+    <!-- matter list action -->
+    <string name="matter_list_action_title">"请选择模块"</string>
+
+    <string-array name="matter_list_action_array">
+        <item>查看</item>
+        <item>修改</item>
+        <item>删除</item>
+    </string-array>
+
+    <!-- history in today -->
+    <string name="history_today_list_empty">抱歉，服务器正在努力恢复中，请稍后访问</string>
+
+    <!-- CopyRight -->
+    <string name="copyright">Copyright @ 2013 凡跃</string>
+    <string name="otherfunction">其他功能</string>
+    <string name="copyright_content">068.com, All Rights Reserved.</string>
+
+    <!-- website -->
+    <string name="website">http://www.068.com</string>
+    <string name="user_ads_app">应用推荐</string>
+    <string name="user_ads_game">游戏推荐</string>
+
+    <!-- add world time -->
+    <string name="addworldtime_searchbar_hint">搜索城市</string>
+    <!-- worldtime -->
+    <string name="worldtime_timezone_nodata">"点击右上角 + 添加城市"</string>
+
+    <!-- matter list action -->
+    <string name="worldtime_list_action_title">"请选择模块"</string>
+    <string name="worldtime_add_city">添加城市</string>
+
+    <string-array name="worldtime_list_action_array">
+        <item>置顶</item>
+        <item>修改</item>
+        <item>删除</item>
+    </string-array>
+
+    <string name="worldtime_top">置顶</string>
+    <string name="worldtime_modfiy">修改</string>
+    <string name="worldtime_delete">删除</string>
+    <string name="addmatter_ps">注：使用提醒功能，需允许本程序后台自启动</string>
+
+    <!-- 节日 -->
+    <string name="holiday_tab_all">全部</string>
+    <string name="holiday_tab_festival">节日</string>
+    <string name="holiday_tab_holiday">假日</string>
+    <string name="holiday_tab_solarterm">节气</string>
+    <string name="title_activity_holiday_detail">HolidayDetailActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="onwork">上班</string>
+    <string name="onholiday">放假</string>
+    <string name="title_activity_home_rec">HomeRecActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- menu -->
+    <string name="tool">工具</string>
+    <string name="more">更多</string>
+    <string name="more_function">更多功能</string>
+    <string name="sync">同步</string>
+    <string name="festival_history">节日假日</string>
+    <string name="date_cal">日期计算器</string>
+    <string name="world_time">世界时间</string>
+    <string name="today_history">历史上今天</string>
+    <string name="title_activity_world_time">WorldTimeActivity</string>
+    <string name="past">超过</string>
+    <string name="distance">距离</string>
+    <string name="target_date">目标日:</string>
+    <string name="add_category">添加分类</string>
+    <string name="detail">详情</string>
+    <string name="app_website">应用官网</string>
+    <string name="website068">www.682.com</string>
+    <string name="app_version">倒数日\n版本号：</string>
+    <string name="dotedline">— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —</string>
+    <string name="backup_sdcard">备份到sdcard</string>
+    <string name="backup_googledrive">备份到GoogleDrive</string>
+    <string name="restore_sdcard">从sdcard中恢复</string>
+    <string name="restore_googledrive">从GoogleDrive中恢复</string>
+    <string name="big_event">大事记</string>
+    <string name="sort_default">"默认排序"</string>
+    <string name="sort_time">"事件时间顺序"</string>
+    <string name="sort_days">"剩余天数顺序"</string>
+    <string name="language_default">默认</string>
+    <string name="language_simplified">简体中文</string>
+    <string name="language_traditional">繁體中文</string>
+    <string name="language_english">English</string>
+    <string name="setting_password">设置密码</string>
+    <string name="please_set_password_by_four">请输入四位密码</string>
+    <string name="please_set_password">请输入密码</string>
+    <string name="please_set_password_again">请再次输入密码</string>
+    <string name="setting_password_sucessful">设置密码成功</string>
+    <string name="password_different">两次密码不一致</string>
+    <string name="password_error">密码错误</string>
+    <string name="point">•</string>
+    <string name="input_old_psw">确认已保存的密码</string>
+    <string name="create_password_input">创建解锁字符</string>
+    <string name="modify_password_input">修改解锁字符</string>
+
+    <!-- 详情 -->
+    <string name="laohuangli">今日黄历</string>
+
+	<string name="laohuangli_detail">想要获取更多黄历信息，请下载中华老黄历</string>
+	<string name="laohuangli_download">马上下载</string>
+	<string name="laohuangli_nongli">农历</string>
+	
+</resources>

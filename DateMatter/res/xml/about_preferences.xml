@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/about_preference_support" >
+        <PreferenceScreen
+            android:key="mark_preferences"
+            android:title="@string/mark_preferences" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="market://details?id=com.pybeta.daymatter" />
+        </PreferenceScreen>
+
+        <Preference
+            android:key="share_preferences"
+            android:title="@string/settings_share_title" >
+        </Preference>
+        <Preference
+            android:key="feedback_preferences"
+            android:title="@string/settings_feedback_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_preference_normal" >
+        <Preference
+            android:key="about_preference_changelog"
+            android:title="@string/about_preference_changelog" />
+        <Preference
+            android:key="about_preference_version"
+            android:title="@string/about_preference_version" />
+    </PreferenceCategory>
+    
+     <PreferenceCategory android:title="@string/about_preference_follow" >
+        <Preference
+            android:key="about_preference_follow_content"
+            android:title="@string/about_preference_follow_content" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

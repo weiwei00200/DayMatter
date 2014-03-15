@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tab_item_bg" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ico_timer" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/list_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="8.0dip" >
+
+            <TextView
+                android:id="@+id/worldtime_tv_cityname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="4.0dip"
+                android:textColor="@color/matter_text_color"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/worldtime_tv_countryname"
+                style="@style/text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/worldtime_tv_cityname"
+                android:layout_toRightOf="@+id/worldtime_tv_cityname"
+                android:paddingLeft="6.0dip"
+                android:textColor="@color/matter_hint_date_color" />
+
+            <TextView
+                android:id="@+id/worldtime_tv_gmt"
+                style="@style/text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/worldtime_tv_cityname"
+                android:paddingLeft="6.0dip"
+                android:textColor="@color/matter_hint_date_color" />
+
+            <TextView
+                android:id="@+id/worldtime_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@+id/iv_matter_unit"
+                android:textColor="@color/matter_text_color"
+                android:textSize="24.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/worldtime_tv_date"
+                style="@style/text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/worldtime_tv_time"
+                android:paddingLeft="6.0dip"
+                android:textColor="@color/matter_hint_date_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearLayout"
+        android:background="@color/list_line" />
+
+</RelativeLayout>

@@ -1,0 +1,314 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <com.pybeta.ui.widget.UcTitleBar
+        android:id="@+id/uc_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp" >
+			<!-- 内容 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/line_item_normal"
+                    android:padding="5dp"
+                    android:text="@string/setting_pref_common_title" />
+                <LinearLayout
+                    android:id="@+id/layout_sort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ico_queue"/>
+                    <TextView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_sort"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.8dp" android:background="@color/list_line"/>
+                <LinearLayout
+                    android:id="@+id/layout_language"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ico_languageset"/>
+                    <TextView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_locale"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.8dp" android:background="@color/list_line"/>
+                <LinearLayout
+                    android:id="@+id/layout_category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ico_sort"/>
+                    <TextView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_category_title"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.8dp" android:background="@color/list_line"/>
+                <RelativeLayout
+                    android:id="@+id/layout_statusbar_remind"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true">
+                    <ImageView
+						android:id="@+id/img_remind"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ico_remind"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"/>
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/img_remind"
+                        android:orientation="vertical">
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/setting_bar_notify_title"
+	                        />
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/setting_bar_notify_summary"
+	                        android:textColor="@color/line_title"
+	                        android:textSize="12sp"/>
+                    </LinearLayout>
+                    <CheckBox 
+                        android:id="@+id/checkbox_remind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:layout_gravity="right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <View android:layout_width="fill_parent" android:layout_height="1.8dp" android:background="@drawable/menu_bottom_shape" />
+            </LinearLayout>
+            
+            <!-- 数据备份 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" 
+                android:layout_marginBottom="15dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/line_item_normal"
+                    android:padding="5dp"
+                    android:text="@string/settings_backup_title" />
+                <LinearLayout
+                    android:id="@+id/layout_backup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ico_backup"/>
+                    <TextView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_backup_title"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.8dp" android:background="@color/list_line"/>
+                <LinearLayout
+                    android:id="@+id/layout_restore"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ico_recovery"/>
+                    <TextView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_restore_title"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="1.8dp" android:background="@drawable/menu_bottom_shape" />
+            </LinearLayout>
+            
+            <!-- 安全 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" 
+                android:layout_marginBottom="15dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/line_item_normal"
+                    android:padding="5dp"
+                    android:text="@string/startup_lock" />
+                <LinearLayout
+                    android:id="@+id/layout_lock_by_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:visibility="gone">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ico_pattern"/>
+                    <TextView 
+                        android:id="@+id/tv_lock_by_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/create_password_input"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.8dp" android:background="@color/list_line"/>
+                <LinearLayout
+                    android:id="@+id/layout_lock_by_pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ico_pattern"/>
+                    <TextView 
+                        android:id="@+id/tv_lock_by_pic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_lock"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.8dp" android:background="@color/list_line"/>
+                <LinearLayout
+                    android:id="@+id/layout_unlock"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+                    <TextView 
+                        android:id="@+id/tv_unlock"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disable_startup_lock"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="1.8dp" android:background="@drawable/menu_bottom_shape" />
+            </LinearLayout>
+            
+            <!-- 关于 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp"  >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/line_item_normal"
+                    android:padding="5dp"
+                    android:text="@string/settings_about_title" />
+                <LinearLayout
+                    android:id="@+id/layout_about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ico_information"/>
+                    <TextView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_about_title"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="1.8dp" android:background="@drawable/menu_bottom_shape" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

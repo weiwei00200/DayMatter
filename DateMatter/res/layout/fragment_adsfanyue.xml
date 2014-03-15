@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/fragment_adsfanyue_applist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+    
+ <!--    <com.pybeta.daymatter.ui.CustomLoading
+        android:id="@+id/fragment_adsfanyue_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+    </com.pybeta.daymatter.ui.CustomLoading> -->
+    
+    <ProgressBar
+        android:id="@+id/fragment_adsfanyue_loading"
+        style="@style/ListSpinner"
+        android:layout_centerInParent="true" />
+    
+     <LinearLayout
+        android:id="@+id/fragment_adsfanyue__noapklistdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView 
+            android:id="@+id/iv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/noapkdata"
+            
+            />
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="稍后献上，敬请期待..." />
+
+    </LinearLayout>
+
+</RelativeLayout>

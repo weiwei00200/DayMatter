@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pressed_daymatter">#CC33B5E5</color>
+    <color name="list_pressed_color">#d8d8d8</color>
+    <color name="common_backgroud_color">#ffeeeef0</color>
+    <color name="item_stroke_color">#ffd0d5e0</color>
+    <color name="matter_text_color">#ff4d4d4d</color>
+    <color name="matter_hint_date_color">#ffa39b9b</color>
+    <color name="matter_item_shadow_color">#ff686868</color>
+    <color name="matter_ps_text_color">#666666</color>
+    <color name="item_stroke_mask_color">#55000000</color>
+    <color name="widget_matter_text_color">#ffffff</color>
+    <color name="widget_matter_hint_date_color">#ff00ff</color>
+
+    <!-- 其他功能页面的配色 -->
+    <color name="title_nor">#939192</color>
+    <color name="nav_bg">#636363</color>
+    <color name="cursor">#62ca9e</color>
+    <color name="apkname">#323232</color>
+    <color name="btndownload">#989898</color>
+    <color name="keyword">#878787</color>
+    <color name="desc">#605e5e</color>
+    <color name="desc_bg">#f4f4f4</color>
+    <color name="dividingline">#c8c6c6</color>
+    <color name="common_font_title">#999999</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#0000FF</color>
+
+    <!-- add world time -->
+    <color name="addworldtime_searchbar_hint">#c7c5c5</color>
+    <color name="addworldtime_list_stroke">#cccccc</color>
+    <color name="addworldtime_list">#fafafa</color>
+    <color name="addworldtime_hightlight">#0095da</color>
+    <color name="worldtime_list_item_sel">#cde5ff</color>
+    <color name="worldtime_list_item_nor">#ffffff</color>
+    <color name="worldtime_timezone_nodata">#9c9c9c</color>
+    <color name="worldtime_timezone_setting">#626262</color>
+    <color name="addmatteractivity_remind_line">#dcdcdc</color>
+    <color name="calendar_week_msg">#777676</color>
+    <color name="calendar_border_line">#dedede</color>
+    <color name="almanac_red_date_msg">#d4473d</color>
+    <color name="calendar_week_backgroud">#f9f9f5</color>
+    <color name="calender_today_item_bk">#FDDADA</color>
+
+    <!-- TitleBarColor -->
+    <color name="title_bar">#38b7ea</color>
+    <color name="title_bar_back_pressed">#28AEE2</color>
+    <color name="tab_item_bg">#f7f7f7</color>
+    <color name="tab_item_line">#dbdbdb</color>
+
+    <!-- Menu -->
+    <color name="line_title">#929292</color>
+    <color name="line_title_bg">#c8c7cc</color>
+    <color name="line_item_normal">#e5e5eb</color>
+    <color name="line_item_pressed">#dadae3</color>
+    <color name="menu_line">#cfcfd1</color>
+    <color name="common_bg">#ededed</color>
+    <color name="common_bg_ef">#efeff4</color>
+    <color name="no_matter">#444444</color>
+    <color name="top_days">#fd472b</color>
+    <color name="top_date">#616161</color>
+    <color name="list_line">#e7e7e7</color>
+    <color name="holiday_festival">#f5c88f</color>
+    <color name="holiday_holiday">#ffb0b0</color>
+    <color name="holiday_solarterm">#8fc8ff</color>
+    <color name="dottedline">#999999</color>
+
+    <!-- addcity -->
+    <color name="addcity_Transparent">#50333333</color>
+    <color name="addcity_cannle_btn_text">#0079ff</color>
+    <color name="light_holo">#81cfeb</color>
+
+    <!-- date_item -->
+    <color name="date_item_weekday"> #efefef</color>
+    <color name="date_item_chinese_number"> #b3b3b3</color>
+    <color name="date_item_special"> #fe9282</color>
+    <color name="date_item_line"> #d1cfcf</color>
+    <color name="date_item_chinese_number_change">#80c6b7</color>
+    <color name="date_item_downloadbg">#fd472b</color>
+    
+
+</resources>

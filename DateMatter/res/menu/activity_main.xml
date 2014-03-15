@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 Google Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_item_action_add"
+        android:icon="@drawable/ic_action_add"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/menu_new_daysmatter"/>
+    <item
+        android:id="@+id/menu_item_action_count_down"
+        android:showAsAction="never"
+        android:title="@string/menu_count_down"/>
+    <item
+        android:id="@+id/menu_item_action_holiday"
+        android:showAsAction="never"
+        android:title="@string/menu_holiday"/>
+    <item
+        android:id="@+id/menu_item_action_setting"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    <item
+        android:id="@+id/menu_item_action_share"
+        android:showAsAction="never"
+        android:title="@string/menu_share"/>
+    <item
+        android:id="@+id/menu_item_action_feedback"
+        android:showAsAction="never"
+        android:title="@string/menu_feedback"/>
+
+</menu>

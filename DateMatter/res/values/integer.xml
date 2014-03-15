@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="point_seekbar_max">10</integer>
+
+    <integer name="animation_loading_interval">50</integer>
+
+</resources>

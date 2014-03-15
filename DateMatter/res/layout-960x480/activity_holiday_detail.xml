@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.pybeta.ui.widget.UcTitleBar
+        android:id="@+id/uc_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+	<FrameLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/viewpager_holiday_detail"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        android:background="@drawable/bg_common"/>
+		<LinearLayout 
+		    android:id="@+id/viewpager_holiday_detail_zhezhao"
+		    android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#9000"
+	        android:windowIsTranslucent = "true"
+	        android:visibility="gone">
+		    <View android:layout_width="wrap_content" android:layout_height="1dp" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:id="@+id/layout_ucCalendar_container"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:visibility="gone"
+		    android:layout_gravity="bottom"
+		    android:background="@android:color/white"
+		    android:layout_marginBottom="25dip"
+		    android:layout_marginLeft="8dp"
+	        android:layout_marginRight="8dp"/>
+		
+	</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+#Android generated
+bin
+gen
+proguard
+
+#Eclipse
+.settings
+
+#Maven
+target
+release.properties
+pom.xml.*
+
+#Command line
+local.properties
+build.xml

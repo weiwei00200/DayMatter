@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/setting_pref_common_title" >
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/settings_sort_tips"
+            android:entries="@array/settings_sort_type"
+            android:entryValues="@array/settings_sort_value"
+            android:key="key_pref_sort_type"
+            android:title="@string/settings_sort"/>
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/settings_locale_tips"
+            android:entries="@array/settings_locale_key"
+            android:entryValues="@array/settings_locale_value"
+            android:key="key_pref_locale_type"
+            android:title="@string/settings_locale" />
+
+        <PreferenceScreen
+            android:key="key_pref_category"
+            android:title="@string/setting_category_title" >
+            <intent
+                android:targetClass="com.pybeta.daymatter.ui.CategoryActivity"
+                android:targetPackage="com.pybeta.daymatter" />
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:key="key_pref_status_bar_notify"
+            android:summary="@string/setting_bar_notify_summary"
+            android:title="@string/setting_bar_notify_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_pref_backup_title" >
+        <Preference
+            android:key="settings_backup"
+            android:title="@string/settings_backup_title" />
+        <Preference
+            android:key="settings_restore"
+            android:title="@string/settings_restore_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="@string/settings_user_lock_screen"
+        android:title="@string/startup_lock" >
+        <Preference
+            android:key="@string/settings_user_lock_enable"
+            android:title="@string/set_lock" />
+        <Preference
+            android:key="@string/settings_user_lock_disable"
+            android:title="@string/disable_startup_lock" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_pref_about_title" >
+        <PreferenceScreen
+            android:key="aboutus_more_preferences"
+            android:title="@string/settings_about_title" >
+            <intent
+                android:targetClass="com.pybeta.daymatter.ui.AboutActivity"
+                android:targetPackage="com.pybeta.daymatter" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

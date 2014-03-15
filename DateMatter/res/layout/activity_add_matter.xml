@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_daysmatter" >
+
+        <RelativeLayout
+            android:id="@+id/edit_new_day_matter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_edit_margin_left"
+            android:layout_marginRight="@dimen/view_edit_margin_left"
+            android:layout_marginTop="@dimen/view_edit_margin_top"
+            android:background="@drawable/bg_shape" >
+
+            <RelativeLayout
+                android:id="@+id/day_event"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view_item_height"
+                android:background="@drawable/view_item_first_selector" >
+
+                <ImageView
+                    android:id="@+id/day_event_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_matter" />
+
+                <TextView
+                    android:id="@+id/day_event_title"
+                    style="@style/text_small"
+                    android:layout_width="@dimen/view_edit_item_sub_width"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_title_margin_left"
+                    android:layout_toRightOf="@id/day_event_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/matter_title"
+                    android:textColor="@color/matter_text_color" />
+
+                <EditText
+                    android:id="@+id/day_event_input"
+                    style="@style/text_small_ex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/view_edit_item_margin_left"
+                    android:layout_toRightOf="@id/day_event_title"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/matter_title_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/matter_text_color"
+                    android:inputType="textPhonetic" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/day_event"
+                android:background="@color/item_stroke_color" />
+
+            <RelativeLayout
+                android:id="@+id/day_date"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view_item_height"
+                android:layout_below="@id/day_event"
+                android:background="@drawable/view_item_middle_selector" >
+
+                <ImageView
+                    android:id="@+id/day_date_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_date" />
+
+                <TextView
+                    android:id="@+id/day_date_title"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_title_margin_left"
+                    android:layout_toRightOf="@id/day_date_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/date_title"
+                    android:textColor="@color/matter_text_color" />
+
+                <ImageView
+                    android:id="@+id/day_date_sub"
+                    android:layout_width="@dimen/view_edit_item_sub_width"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_sub_arrow" />
+
+                <TextView
+                    android:id="@+id/day_date_summary"
+                    style="@style/text_small_ex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/day_date_sub"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/matter_text_color" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/day_date"
+                android:background="@color/item_stroke_color" />
+
+            <RelativeLayout
+                android:id="@+id/day_category"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view_item_height"
+                android:layout_below="@id/day_date"
+                android:background="@drawable/view_item_middle_selector" >
+
+                <ImageView
+                    android:id="@+id/day_category_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_category" />
+
+                <TextView
+                    android:id="@+id/day_category_title"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_title_margin_left"
+                    android:layout_toRightOf="@id/day_category_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/category_title"
+                    android:textColor="@color/matter_text_color" />
+
+                <ImageView
+                    android:id="@+id/day_category_sub"
+                    android:layout_width="@dimen/view_edit_item_sub_width"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_sub_arrow" />
+
+                <TextView
+                    android:id="@+id/day_category_summary"
+                    style="@style/text_small_ex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/day_category_sub"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/matter_text_color" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/day_category"
+                android:background="@color/item_stroke_color" />
+
+            <RelativeLayout
+                android:id="@+id/day_repeat"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view_item_height"
+                android:layout_below="@id/day_category"
+                android:background="@drawable/view_item_middle_selector" >
+
+                <ImageView
+                    android:id="@+id/day_repeat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_repeat" />
+
+                <TextView
+                    android:id="@+id/day_repeat_title"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_title_margin_left"
+                    android:layout_toRightOf="@id/day_repeat_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/repeat_title"
+                    android:textColor="@color/matter_text_color" />
+
+                <ImageView
+                    android:id="@+id/day_repeat_sub"
+                    android:layout_width="@dimen/view_edit_item_sub_width"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_sub_arrow" />
+
+                <TextView
+                    android:id="@+id/day_repeat_summary"
+                    style="@style/text_small_ex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/day_repeat_sub"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/matter_text_color" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/day_repeat"
+                android:background="@color/item_stroke_color" />
+
+            <RelativeLayout
+                android:id="@+id/day_remind"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view_item_height"
+                android:layout_below="@id/day_repeat"
+                android:background="@drawable/view_item_middle_selector" >
+
+                <ImageView
+                    android:id="@+id/day_remind_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_remind" />
+
+                <TextView
+                    android:id="@+id/day_remind_title"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_title_margin_left"
+                    android:layout_toRightOf="@id/day_remind_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/remind_title"
+                    android:textColor="@color/matter_text_color" />
+
+                <ImageView
+                    android:id="@+id/day_remind_sub"
+                    android:layout_width="@dimen/view_edit_item_sub_width"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_sub_arrow" />
+
+                <TextView
+                    android:id="@+id/day_remind_summary"
+                    style="@style/text_small_ex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/day_remind_sub"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/matter_text_color" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/day_remind"
+                android:background="@color/item_stroke_color" />
+
+            <RelativeLayout
+                android:id="@+id/day_top"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view_item_height"
+                android:layout_below="@id/day_remind"
+                android:background="@drawable/view_item_middle_selector" >
+
+                <ImageView
+                    android:id="@+id/day_top_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_top" />
+
+                <TextView
+                    android:id="@+id/day_top_title"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_title_margin_left"
+                    android:layout_toRightOf="@id/day_top_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/top_title"
+                    android:textColor="@color/matter_text_color" />
+
+                <ImageView
+                    android:id="@+id/day_top_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/view_edit_checkbox_margin_right"
+                    android:src="@drawable/checkbox_off" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/day_top"
+                android:background="@color/item_stroke_color" />
+
+            <RelativeLayout
+                android:id="@+id/day_remark"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view_item_height"
+                android:layout_below="@id/day_top"
+                android:background="@drawable/view_item_last_selector" >
+
+                <ImageView
+                    android:id="@+id/day_remark_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_item_margin_left"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_matter" />
+
+                <TextView
+                    android:id="@+id/day_remark_title"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_edit_title_margin_left"
+                    android:layout_toRightOf="@id/day_remark_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/remark_title"
+                    android:textColor="@color/matter_text_color" />
+
+                <EditText
+                    android:id="@+id/day_remark_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/view_edit_item_margin_left"
+                    android:layout_toRightOf="@id/day_remark_title"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/remark_title_hint"
+                    android:textColor="@color/matter_text_color"
+                    android:textSize="@dimen/text_size_ex_small" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/edit_new_day_matter"
+            android:layout_marginLeft="@dimen/view_edit_margin_left"
+            android:layout_marginRight="@dimen/view_edit_margin_left"
+            android:text="@string/addmatter_ps"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/matter_ps_text_color"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            />
+
+       <!--  <LinearLayout
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" /> -->
+    </RelativeLayout>
+
+</RelativeLayout>

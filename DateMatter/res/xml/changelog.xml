@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <release version="1.3.9" versioncode="20">
+        <change>解决选择数据恢复后出现崩溃问题</change>
+        <change>解决提醒功能无法正常使用问题</change>
+        <change>修复其他已知bug</change>
+    </release>
+    <release version="1.3.8" versioncode="19">
+        <change>新增其他功能模块</change>
+        <change>新增查询世界时间功能，快速查看世界各地时间</change>
+        <change>新增事件时，设置时间时可填写具体时间</change>
+        <change>修复其他已知bug</change>
+    </release>
+    <release version="1.3.7" versioncode="18">
+        <change>清除残余广告代码</change>
+    </release>
+    <release version="1.3.6" versioncode="17">
+        <change>优化应用结构，去除广告</change>
+    </release>
+    <release version="1.3.5" versioncode="16">
+        <change>优化应用逻辑，修复crash问题</change>
+    </release>
+    <release version="1.3.2" versioncode="13">
+        <change>iOS App和Chrome插件同步发布，请在对应AppStore搜索"DateMatter"</change>
+        <change>新增GoogleDrive备份与恢复，支持与iOS App和Chrome插件同步</change>
+        <change>新增历史上的今天、通知栏通知、分类编辑等功能</change>
+        <change>更新应用界面，修复其他体验问题</change>
+    </release>
+    <release version="1.3.1" versioncode="12">
+        <change>更新应用图标</change>
+        <change>增加图案加密，替换掉原来的密码加密</change>
+        <change>增加日期日期计数、节日倒数</change>
+        <change>修改桌面widget</change>
+        <change>修复事件排序等问题</change>
+    </release>
+    <release version="1.3.0" versioncode="10">
+        <change>添加多种桌面widget</change>
+        <change>修复事件删除后重新出现等问题</change>
+    </release>    
+    <release version="1.2.1" versioncode="7">
+        <change>支持农历计数</change>
+        <change>添加提醒功能</change>
+        <change>增加主屏和查看事件的截屏分享</change>
+        <change>修复部分问题</change>
+    </release>    
+    <release version="1.2.0" versioncode="6">
+        <change>全新界面，全新体验</change>
+        <change>修改逻辑，优化速度</change>
+        <change>修改部分机型下无法添加Widget的问题</change>
+        <change>支持语言切换</change>
+        <change>支持截屏分享</change>
+    </release>    
+    <release version="1.1.0" versioncode="5">
+        <change>新增数据备份、恢复功能</change>
+        <change>新增数据加密功能</change>
+        <change>新增两种数据排序类型</change>
+        <change>修复部分问题</change>
+    </release>
+</changelog>

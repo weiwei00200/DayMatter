@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用 -->
+    <string name="app_name">"DateMatter"</string>
+    <string name="menu_common_feature">"Universal"</string>
+    <string name="matter_ok">"OK"</string>
+    <string name="matter_cancel">"Cancel"</string>
+    <string name="matter_delete">"Delete"</string>
+
+    <!-- Title -->
+    <string name="title_activity_home">"DateMatter"</string>
+    <string name="title_activity_settings">"Settings"</string>
+    <string name="title_activity_holiday">"Festival"</string>
+    <string name="title_activity_count_down">"Date Calculations"</string>
+    <string name="title_activity_history_today">"Today in History"</string>
+    <string name="title_activity_worldtime">World Time</string>
+    <string name="title_activity_about">"About"</string>
+    <string name="title_activity_category">"Category Settings"</string>
+    <string name="title_activity_add_matter">"Add Event"</string>
+    <string name="title_activity_modify_matter">"Modify Event"</string>
+
+    <!-- 分类 -->
+    <string name="category_default">"Default"</string>
+
+    <string-array name="matter_category">
+        <item>"Default"</item>
+        <item>"Life"</item>
+        <item>"Work"</item>
+        <item>"Memorial Day"</item>
+    </string-array>
+
+    <!-- widget -->
+    <string name="widget_label">"DateMatter(1*1)"</string>
+    <string name="widget_label_middle">"DateMatter(2*1)"</string>
+    <string name="widget_label_wide">"DateMatter(3*1)"</string>
+    <string name="widget_label_huge">"DateMatter(4*1)"</string>
+    <string name="mattery_widget_configure_title">"Please select an event"</string>
+    <string name="mattery_widget_matter_be_delete_short">"Deleted"</string>
+    <string name="mattery_widget_matter_be_delete">"The event has been deleted, please delete the desktop widget!"</string>
+
+    <!-- settings -->
+    <string name="setting_pref_common_title">"Content"</string>
+    <string name="setting_pref_backup_title">"Data backup"</string>
+    <string name="setting_pref_about_title">"Other"</string>
+
+    <!-- matter -->
+    <string name="matter_list_empty">"Empty"</string>
+    <string name="matter_unit">"Day"</string>
+    <string name="matter_past_format">"%s"</string>
+    <string name="matter_future_format">"%s"</string>
+    <string name="matter_top_date_format">"Date: %s"</string>
+    <string name="matter_future_format_distance">"Besides"</string>
+    <string name="matter_list_menu_title">"Select an action"</string>
+    <string name="matter_list_menu_view">"View"</string>
+    <string name="matter_list_menu_modify">"Modify"</string>
+    <string name="matter_list_menu_delete">"Delete"</string>
+	<string name="matter_today_format">"Today: %s"</string>
+
+	<string name="holiday_add_local">"Add Festival to DateMatter?"</string>
+	<string name="history_today_share_format">#DateMatter# [History of %1$s.%2$s] %3$s</string>
+	
+    <!-- 修改 -->
+    <string name="matter_title">"Event"</string>
+    <string name="date_title">"Date "</string>
+    <string name="category_title">"Category"</string>
+    <string name="repeat_title">"Repeated"</string>
+    <string name="remind_title">"Remind"</string>
+    <string name="top_title">"Top"</string>
+    <string name="remark_title">"Remark"</string>
+    <string name="remark_title_hint">"Please enter the remark of the event"</string>
+    <string name="matter_title_hint">"Please enter the name of the event"</string>
+    <string name="matter_save">"Save successfully"</string>
+    <string name="matter_delete_confirm">"Are you sure to delete this event?"</string>
+    <string name="matter_delete_success">"Deleted successfully"</string>
+
+    <!-- 分享 -->
+    <string name="about_app">"The DateMatter is a small tool to help you record important day in the life. \n\n welcome feedback on your needs ^ _ ^"</string>
+    <string name="share_intent_subject">"Recommended to use the DateMatter, an important day in the record of life"</string>
+    <string name="share_intent_text">"Recommend you a simple little tool, it can help you to record important day in life, so you do not miss! Download: http://t.cn/zW4QygW"</string>
+    <string name="share_intent_title">"Please choose sharing ways"</string>
+    <string name="screen_shot_progress">"screenshot, please wait"</string>
+    <string name="screen_shot_save_path">"Screenshot saved in"</string>
+
+    <!-- 关于 -->
+    <string name="mark_preferences">"Rate"</string>
+    <string name="settings_about_title">"About"</string>
+    <string name="aboutus_summary_preferences">"Version number: %s"</string>
+    <string name="settings_feedback_title">"Feedback"</string>
+    <string name="settings_feedback_summary">"Leave your suggestions and comments!"</string>
+    <string name="settings_share_title">"Share"</string>
+    <string name="settings_share_summary">"Share to a Friend"</string>
+
+    <!-- 菜单 -->
+    <string name="menu_settings">"Settings"</string>
+    <string name="menu_count_down">"Date Calculations"</string>
+    <string name="menu_holiday">"Festival"</string>
+    <string name="menu_about">"About"</string>
+    <string name="menu_feedback">"Feedback"</string>
+    <string name="menu_new_daysmatter">"Add"</string>
+    <string name="menu_modify">"Modify"</string>
+    <string name="menu_save">"Save"</string>
+    <string name="menu_delete">"Delete"</string>
+    <string name="menu_share">"Share"</string>
+
+    <!-- 语言设置 -->
+    <string name="settings_locale">"Language settings"</string>
+    <string name="settings_locale_tips">"Please select a language"</string>
+
+    <!-- 排序设置 -->
+    <string name="settings_sort_tips">"Please select the type of sort"</string>
+    <string name="settings_sort">"The type of sort"</string>
+
+    <string-array name="settings_sort_type">
+        <item>"The default sort type"</item>
+        <item>"Event in chronological order"</item>
+        <item>"The remaining days of the order"</item>
+    </string-array>
+
+    <!-- 状态栏 -->
+    <string name="setting_bar_notify_title">"Status bar to remind"</string>
+    <string name="setting_bar_notify_summary">"If turned on, displays recent events"</string>
+
+    <!-- 事件类型 -->
+    <string name="mattery_category_title">"Please select the type of event"</string>
+    <string name="setting_category_title">"Category settings"</string>
+    <string name="setting_input_category_title">"Please enter the name of the category"</string>
+    <string name="setting_input_category_empty">"enter an invalid, please re-enter"</string>
+
+    <string-array name="category_operate_type">
+        <item>"Modify"</item>
+        <item>"Delete"</item>
+    </string-array>
+
+    <!-- 重复类型 -->
+    <string name="mattery_repeat_title">"Please select repeat type"</string>
+
+    <string-array name="matter_repeat">
+        <item>"None"</item>
+        <item>"Week"</item>
+        <item>"Month"</item>
+        <item>"Years"</item>
+    </string-array>
+
+    <!-- change log -->
+    <string name="title_changelog">"Changelog"</string>
+    <string name="changelog_close">"OK"</string>
+
+    <!-- notification -->
+    <string name="notification_content_text">"You have a new reminder"</string>
+    <string name="notification_matter_today">"%s in today"</string>
+    <string name="notification_matter_tomorrow">"%s in tomorrow"</string>
+
+    <!-- 提醒时间 -->
+    <string name="mattery_remind_title">"Please select a reminder time"</string>
+
+    <string-array name="matter_remind">
+        <item>"None"</item>
+        <item>"That day"</item>
+        <item>"One day before"</item>
+    </string-array>
+
+    <!-- calendar -->
+    <string name="matter_calendar_lunar_date_format">"Lunar: %d year"</string>
+    <string name="matter_calendar_gregorian_date_format">"MM-dd-yyyy EEEEE"</string>
+    <string name="matter_calendar_gregorian_date_format_1">"MM-dd-yyyy"</string>
+
+    <!-- AppRate -->
+    <string name="dialog_title">"Rate %s"</string>
+    <string name="rate_message">"If you like this application, please help to rate in GooglePlay. \n Thank you!"</string>
+    <string name="rate">"Right Now"</string>
+    <string name="later">"Later prompt"</string>
+    <string name="no_thanks">"No, thank you"</string>
+
+    <!-- lock -->
+    <string name="startup_lock">"Lock"</string>
+    <string name="set_lock">"Draw an unlock pattern"</string>
+    <string name="change_lock">"Modify the unlock pattern"</string>
+    <string name="disable_startup_lock">"Unlock"</string>
+
+    <!-- count down -->
+    <string name="count_down_tips_1">"From"</string>
+    <string name="count_down_tips_2">"begin"</string>
+    <string name="count_down_tips_3">"Distance"</string>
+    <string name="count_down_tips_4">"has"</string>
+
+    <string-array name="tab_count_down_title_array">
+        <item>"Date calculations"</item>
+        <item>"days calculations"</item>
+    </string-array>
+
+    <string name="count_before_days_tips">"Days before"</string>
+    <string name="count_after_days_tips">"Days after"</string>
+
+    <!-- about -->
+    <string name="about_preference_normal">"Normal"</string>
+    <string name="about_preference_version">"Version No: "</string>
+    <string name="about_preference_changelog">"Changelog"</string>
+    <string name="about_preference_support">"Supported"</string>
+    <!-- attention -->
+    <string name="about_preference_follow">follow</string>
+    <string name="about_preference_follow_content">visit website</string>
+
+    <!-- backup -->
+    <string name="settings_backup_title">"Data backup"</string>
+    <string name="settings_restore_title">"Data restore"</string>
+    <string name="settings_backup_confirm">"Are you sure to back up your data?"</string>
+    <string name="settings_backup_success">"The data backup is successful, save at %s"</string>
+    <string name="settings_backup_failed">"Data backup failed, please try again"</string>
+    <string name="settings_restore_location">"Location"</string>
+    <string name="settings_restore_picker_file">"Please select the need to restore the data file"</string>
+    <string name="settings_restore_success">"Data recovery success"</string>
+    <string name="settings_restore_failed">"Data recovery failed, please try again"</string>
+    <string name="backup_picker_way_title">"Please select a backup method"</string>
+
+    <string-array name="backup_way_list">
+        <item>"Backup to sdcard"</item>
+        <item>"Backup to GoogleDrive"</item>
+    </string-array>
+
+    <string name="settings_backup_no_google_play_services">"Sorry, you do not have to install GooglePlay service, can not back up your data"</string>
+    <string name="settings_backup_to_drive_success">"The backup to GoogleDrive has been successfully"</string>
+    <string name="settings_backup_progress">"Please wait, data backup"</string>
+    <string name="restore_picker_way_title">"Please select recovery mode"</string>
+
+    <string-array name="restore_way_list">
+        <item>"Recover from sdcard"</item>
+        <item>"Recover from GoogleDrive"</item>
+    </string-array>
+
+    <string name="settings_restore_no_google_play_services">"Sorry, you do not have to install GooglePlay service, data can not be recovered"</string>
+    <string name="settings_restore_get_file_list_progress">"Retrieving the list of recoverable data, please wait"</string>
+    <string name="settings_restore_get_file_list_failed">"Get a list of recoverable data failed, please try again"</string>
+    <string name="settings_restore_file_empty">"No recoverable data"</string>
+    <string name="settings_restore_progress">"Data recovery, please wait"</string>
+
+    <!-- matter list action -->
+    <string name="matter_list_action_title">"Please select an action"</string>
+    <string-array name="matter_list_action_array">
+        <item>View</item>
+        <item>Modify</item>
+        <item>Delete</item>
+    </string-array>
+    
+    <!-- history in today -->
+    <string name="history_today_list_empty">Sorry， Server is in errer status.</string>
+    
+    <!-- CopyRight -->
+    <string name="copyright">Copyright @ 2013 fanyue</string>
+    <string name="otherfunction">otherfunctions</string>
+    <string name="copyright_content">068.com, All Rights Reserved.</string>
+    <string name="user_ads_app">Apps Recommanded</string>
+    <string name="user_ads_game">Games Recommanded</string>
+    
+    <!--add world time  -->
+    <string name="addworldtime_searchbar_hint">search city</string>
+    <string name="worldtime_timezone_nodata">"Click the sign + to add cities"</string>
+    <string-array name="worldtime_list_action_array">
+        <item>"Top"</item>
+        <item>"Modify"</item>
+        <item>"Delete"</item>
+    </string-array>
+     <string name="addmatter_ps">Note: This program requires autostart operation</string>
+</resources>

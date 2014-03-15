@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_daysmatter_list" >
+
+    <ListView
+        android:id="@+id/worldtime_listiview_citylist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <ProgressBar
+        android:id="@+id/worldtime_pb_loading"
+        style="@style/ListSpinner"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/worldtime_timezone_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="20.0dip"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/worldtime_timezone_iv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/noapkdata" />
+
+        <TextView
+            android:id="@+id/worldtime_timezone_tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5.0dip"
+            android:text="@string/worldtime_timezone_nodata"
+            android:textColor="@color/worldtime_timezone_nodata"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

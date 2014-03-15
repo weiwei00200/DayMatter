@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/holiday_solarterm_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@null"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/transparent"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+    </ListView>
+    <ProgressBar
+        android:id="@+id/solarterm_loading"
+        style="@style/ListSpinner"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

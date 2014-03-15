@@ -1,0 +1,90 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- lock pattern -->
+    <string name="alp_cmd_confirm">"確認"</string>
+    <string name="alp_cmd_continue">"繼續"</string>
+    <string name="alp_cmd_retry">"重試"</string>
+    <string name="alp_lockscreen_access_pattern_cell_added">"已添加單元格"</string>
+    <string name="alp_lockscreen_access_pattern_cleared">"圖案已清除"</string>
+    <string name="alp_lockscreen_access_pattern_detected">"圖案繪製完成"</string>
+    <string name="alp_lockscreen_access_pattern_start">"開始繪製圖案"</string>
+    <string name="alp_msg_connect_4dots">"至少連接4個點，請重試"</string>
+    <string name="alp_msg_draw_an_unlock_pattern">"繪製解鎖圖案"</string>
+    <string name="alp_msg_draw_pattern_to_unlock">"確認已保存的圖案"</string>
+    <string name="alp_msg_pattern_recorded">"圖案已記錄"</string>
+    <string name="alp_msg_redraw_pattern_to_confirm">"再次繪製圖案進行確認"</string>
+    <string name="alp_msg_release_finger_when_done">"完成後鬆開手指"</string>
+    <string name="alp_msg_try_again">"請重試"</string>
+    <string name="alp_msg_your_new_unlock_pattern">"您的新解鎖圖案"</string>
+
+
+	<!-- date picker -->
+    <!-- Preference framework strings. -->
+    <string name="cancel">"取消"</string>
+    <string name="date_time_set">"確定"</string>
+
+    <!-- The title of the date picker dialog. [CHAR LIMIT=NONE] -->
+    <string name="number_picker_dialog_title">選擇天數</string>
+    <string name="date_picker_dialog_title">"選擇日期"</string>
+
+    <!-- DatePicker - accessibility support -->
+    <string name="date_picker_increment_month_button">"增加月份"</string>
+    <string name="date_picker_decrement_month_button">"减少月份"</string>
+    <string name="date_picker_increment_day_button">"增加日期"</string>
+    <string name="date_picker_decrement_day_button">"減少日期"</string>
+    <string name="date_picker_increment_year_button">"增加年份"</string>
+    <string name="date_picker_decrement_year_button">"減少年份"</string>
+    
+    <string-array name="date_picker_calendar">
+        <item>"公曆"</item>
+        <item>"農曆"</item>
+    </string-array>
+    <string-array name="date_picker_calendar_month">
+        <item>"正月"</item>
+        <item>"二月"</item>
+        <item>"三月"</item>
+        <item>"四月"</item>
+        <item>"五月"</item>
+        <item>"六月"</item>
+        <item>"七月"</item>
+        <item>"八月"</item>
+        <item>"九月"</item>
+        <item>"十月"</item>
+        <item>"冬月"</item>
+        <item>"臘月"</item>
+    </string-array>
+    <string-array name="date_picker_calendar_day">
+        <item>"農曆"</item>
+        <item>"初一"</item>
+        <item>"初二"</item>
+        <item>"初三"</item>
+        <item>"初四"</item>
+        <item>"初五"</item>
+        <item>"初六"</item>
+        <item>"初七"</item>
+        <item>"初八"</item>
+        <item>"初九"</item>
+        <item>"初十"</item>
+        <item>"十一"</item>
+        <item>"十二"</item>
+        <item>"十三"</item>
+        <item>"十四"</item>
+        <item>"十五"</item>
+        <item>"十六"</item>
+        <item>"十七"</item>
+        <item>"十八"</item>
+        <item>"十九"</item>
+        <item>"廿十"</item>
+        <item>"廿一"</item>
+        <item>"廿二"</item>
+        <item>"廿三"</item>
+        <item>"廿四"</item>
+        <item>"廿五"</item>
+        <item>"廿六"</item>
+        <item>"廿七"</item>
+        <item>"廿八"</item>
+        <item>"廿九"</item>
+        <item>"三十"</item>
+        <item>"三一"</item>
+    </string-array>
+</resources>

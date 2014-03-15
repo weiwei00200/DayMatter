@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="view_top_height">50dip</dimen>
+    <dimen name="text_size_large">40sp</dimen>
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_ex_small">13sp</dimen>
+    <dimen name="view_margin_space_small">5dip</dimen>
+    <dimen name="view_margin_space_large">10dip</dimen>
+    <dimen name="view_main_list_margin_left">15dip</dimen>
+    <dimen name="view_edit_margin_left">16dip</dimen>
+    <dimen name="view_main_margin_top">25dip</dimen>
+    <dimen name="view_edit_margin_top">40dip</dimen>
+    <dimen name="view_item_height">50dip</dimen>
+    <dimen name="view_edit_item_margin_left">5dip</dimen>
+    <dimen name="view_edit_title_margin_left">5dip</dimen>
+    <dimen name="view_edit_item_sub_width">40dip</dimen>
+    <dimen name="view_edit_checkbox_margin_right">20dip</dimen>
+    <dimen name="list_item_title_width">197.33dip</dimen>
+    <dimen name="list_item_days_num_width">45.66dip</dimen>
+    <dimen name="list_item_unit_width">31.33dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

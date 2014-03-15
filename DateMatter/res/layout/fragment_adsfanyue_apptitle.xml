@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fragment_adsfanyue_app"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:text="@string/user_ads_app"
+        android:textColor="@color/common_font_title"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/dividingline"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingline" />
+
+</LinearLayout>

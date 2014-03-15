@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    <com.pybeta.ui.widget.UcTitleBar
+        android:id="@+id/uc_titlebar_holidayrec"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0px"
+                android:gravity="center" 
+                android:tabStripEnabled="true"
+                android:background="@color/tab_item_bg"
+                android:divider="@null"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/common_bg">
+
+                <com.pybeta.daymatter.ui.HolidayAllPanel
+                    android:id="@+id/holiday_all_panel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+                <com.pybeta.daymatter.ui.HolidayFestivalPanel
+                    android:id="@+id/holiday_festival_panel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+                <com.pybeta.daymatter.ui.HolidayHolidayPanel
+                    android:id="@+id/holiday_holiday_panel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+                <com.pybeta.daymatter.ui.HolidaySolartermPanel
+                    android:id="@+id/holiday_solarterm_panel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

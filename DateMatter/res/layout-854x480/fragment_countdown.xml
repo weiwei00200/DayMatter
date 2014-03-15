@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <com.pybeta.ui.widget.UcTitleBar
+        android:id="@+id/uc_titlebar_countdown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+    <LinearLayout
+        android:id="@+id/date_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.63"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/count_date_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" >
+
+                <Button
+                    android:id="@+id/count_date_start_btn_date"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/spinner_background_holo_light"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/count_date_start_btn_date"
+                    android:text="@string/count_down_tips_1" 
+                    android:textColor="@color/line_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/count_date_start_btn_date"
+                    android:text="@string/count_down_tips_2" 
+                    android:textColor="@color/line_title"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line_one_date"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/count_date_start_date"
+                android:background="@color/common_bg" />
+
+            <RelativeLayout
+                android:id="@+id/count_date_end_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_one_date"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" >
+
+                <Button
+                    android:id="@+id/count_date_end_btn_date"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/spinner_background_holo_light"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/count_date_end_btn_date"
+                    android:text="@string/count_down_tips_3" 
+                    android:textColor="@color/line_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/count_date_end_btn_date"
+                    android:text="@string/count_down_tips_4" 
+                    android:textColor="@color/line_title"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line_two_date"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/count_date_end_date"
+                android:background="@color/common_bg" />
+
+            <RelativeLayout
+                android:id="@+id/count_date_result_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_two_date"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" >
+
+                <TextView
+                    android:id="@+id/count_date_result_num_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/addlong_date"
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/count_date_result_date" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/menu_bottom_shape"
+                android:layout_below="@id/addlong_date" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- ========================================================================================== -->
+
+    <LinearLayout
+        android:id="@+id/days_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/count_date_start_dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" >
+
+                <Button
+                    android:id="@+id/count_date_start_btn_dates"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/spinner_background_holo_light"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/count_date_start_btn_dates"
+                    android:text="@string/count_down_tips_1" 
+                    android:textColor="@color/line_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/count_date_start_btn_dates"
+                    android:text="@string/count_down_tips_2" 
+                    android:textColor="@color/line_title"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line_one_dates"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/count_date_start_dates"
+                android:background="@color/common_bg" />
+
+            <RelativeLayout
+                android:id="@+id/count_date_before_view_dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_one_dates"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" >
+
+                <Button
+                    android:id="@+id/count_before_days_input_dates"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/spinner_background_holo_light"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/count_before_days_tips_dates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/count_before_days_input_dates"
+                    android:text="@string/count_before_days_tips" 
+                    android:textColor="@color/line_title"/>
+
+                <Button
+                    android:id="@+id/count_before_days_result_dates"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/count_before_days_tips_dates"
+                    android:background="@drawable/spinner_background_holo_light"
+                    android:clickable="false"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line_two_dates"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/count_date_before_view_dates"
+                android:background="@color/common_bg" />
+
+            <RelativeLayout
+                android:id="@+id/count_date_after_view_dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_two_dates"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" >
+
+                <Button
+                    android:id="@+id/count_after_days_input_dates"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/spinner_background_holo_light"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/count_after_days_tips_dates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/count_after_days_input_dates"
+                    android:text="@string/count_after_days_tips"
+                    android:textColor="@color/line_title" />
+
+                <Button
+                    android:id="@+id/count_after_days_result_dates"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/count_after_days_tips_dates"
+                    android:background="@drawable/spinner_background_holo_light"
+                    android:clickable="false"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/addlong_dates"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/count_date_after_view_dates" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/menu_bottom_shape"
+                android:layout_below="@id/addlong_dates" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

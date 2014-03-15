@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/tv_holiday_tabtext"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="123"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@color/tab_item_bg"/>
+    
+	<ImageView 
+	    android:id="@+id/img_holiday_tabimg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="3dp"
+	    android:background="@color/tab_item_line"
+	    android:layout_alignParentBottom="true"/>
+	<ImageView 
+	    android:id="@+id/img_holiday_tab_triangle"
+        android:layout_width="16dp"
+        android:layout_height="8dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tab_triangle"
+        android:layout_above="@id/img_holiday_tabimg"/>
+</RelativeLayout>	

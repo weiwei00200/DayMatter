@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/layout_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/animation_loading" />
+
+    <TextView
+        android:id="@+id/layout_loading_error"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="18dp"
+        android:textColor="@color/common_font_title"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="@drawable/bg_common" />
+
+</RelativeLayout>

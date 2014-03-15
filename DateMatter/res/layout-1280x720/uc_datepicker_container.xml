@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_tag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/onwork_bg"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/onwork" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/onholiday_bg" 
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onholiday" />
+    </LinearLayout>
+	<FrameLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="264dp"
+	    android:orientation="horizontal"
+	    android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:background="@android:color/transparent">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+		    <com.pybeta.daymatter.calendar.UcCalendar
+		        android:id="@+id/dialog_container_datepicker"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"/>
+	    </LinearLayout>
+	</FrameLayout>
+    
+
+    <TextView
+        android:id="@+id/tv_dialog_container_today"
+        style="@style/text_small"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/matter_hint_date_color" />
+
+</LinearLayout>

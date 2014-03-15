@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/day_matter_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_daysmatter" >
+
+    <TextView
+        android:id="@+id/day_matter_title"
+        style="@style/view_pager_matter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/view_main_list_margin_left"
+        android:paddingRight="@dimen/view_main_list_margin_left"
+        android:paddingTop="60dip" />
+
+    <TextView
+        android:id="@+id/day_matter_days"
+        style="@style/text_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day_matter_title"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dip"
+        android:textColor="#FFC50000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/day_matter_date"
+        style="@style/text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day_matter_days"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dip"
+        android:textColor="@color/matter_hint_date_color" />
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/day_matter_date"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+	    <TextView
+	        android:id="@+id/day_matter_remark"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/matter_hint_date_color"
+	        android:textSize="@dimen/text_size_small" />
+	</ScrollView>
+    <TextView
+        android:id="@+id/day_matter_today"
+        style="@style/text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="23dip"
+        android:textColor="@color/matter_hint_date_color" />
+
+</RelativeLayout>

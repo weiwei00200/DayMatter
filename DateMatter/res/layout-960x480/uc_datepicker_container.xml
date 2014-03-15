@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_tag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/onwork_bg" 
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/onwork" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/onholiday_bg" 
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onholiday" />
+    </LinearLayout>
+	<FrameLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="229dp"
+	    android:orientation="horizontal"
+	    android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:background="@android:color/transparent">
+	    <LinearLayout 
+            android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:paddingBottom="1.5dp"
+		        android:paddingRight="1.5dp">
+		    <com.pybeta.daymatter.calendar.UcCalendar
+		        android:id="@+id/dialog_container_datepicker"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"/>
+	    </LinearLayout>
+	    <!-- <View 
+	        android:layout_height="fill_parent"
+	        android:layout_width="0.5dp"
+	        android:background="#CCCCCC"
+	        android:layout_gravity="right"/>
+	    <View
+		    android:id="@+id/bottom_border"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="#CCCCCC"
+	        android:layout_gravity="bottom"/> -->
+	</FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_dialog_container_today"
+        style="@style/text_small"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/matter_hint_date_color" />
+
+</LinearLayout>

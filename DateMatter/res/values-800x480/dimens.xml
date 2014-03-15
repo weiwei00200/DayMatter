@@ -1,0 +1,4 @@
+<resources>
+     <dimen name="today_num_left_plus_calendar_today">2dp</dimen><!-- 当前天的日期位置操作数 -->
+     <dimen name="today_en_left_plus_calendar_today">6dp</dimen><!-- “today”位置操作数 -->
+</resources>
